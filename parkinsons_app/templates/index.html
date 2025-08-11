@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parkinson's Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f7f7f7;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        input[type="submit"],
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button {
+            background-color: #2196F3;
+            margin-top: 10px;
+        }
+        h3 {
+            text-align: center;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Parkinson's Disease Prediction</h2>
+    
+    <form method="post" action="/predict" id="predictForm">
+
+        <!-- Input Fields -->
+        <label>MDVP:Fo(Hz): <input type="text" name="f1" id="f1" required></label>
+        <label>MDVP:Fhi(Hz): <input type="text" name="f2" id="f2" required></label>
+        <label>MDVP:Flo(Hz): <input type="text" name="f3" id="f3" required></label>
+        <label>MDVP:Jitter(%): <input type="text" name="f4" id="f4" required></label>
+        <label>MDVP:Jitter(Abs): <input type="text" name="f5" id="f5" required></label>
+        <label>MDVP:RAP: <input type="text" name="f6" id="f6" required></label>
+        <label>MDVP:PPQ: <input type="text" name="f7" id="f7" required></label>
+        <label>Jitter:DDP: <input type="text" name="f8" id="f8" required></label>
+        <label>MDVP:Shimmer: <input type="text" name="f9" id="f9" required></label>
+        <label>MDVP:Shimmer(dB): <input type="text" name="f10" id="f10" required></label>
+        <label>Shimmer:APQ3: <input type="text" name="f11" id="f11" required></label>
+        <label>Shimmer:APQ5: <input type="text" name="f12" id="f12" required></label>
+        <label>MDVP:APQ: <input type="text" name="f13" id="f13" required></label>
+        <label>Shimmer:DDA: <input type="text" name="f14" id="f14" required></label>
+        <label>NHR: <input type="text" name="f15" id="f15" required></label>
+        <label>HNR: <input type="text" name="f16" id="f16" required></label>
+        <label>RPDE: <input type="text" name="f17" id="f17" required></label>
+        <label>DFA: <input type="text" name="f18" id="f18" required></label>
+        <label>spread1: <input type="text" name="f19" id="f19" required></label>
+        <label>spread2: <input type="text" name="f20" id="f20" required></label>
+        <label>D2: <input type="text" name="f21" id="f21" required></label>
+        <label>PPE: <input type="text" name="f22" id="f22" required></label>
+
+        <!-- Submit and Demo Buttons -->
+        <input type="submit" value="Predict">
+        <button type="button" onclick="fillDemo()">🎯 Demo Fill</button>
+    </form>
+
+    <!-- Prediction Text (from Flask) -->
+    <h3>{{ prediction_text }}</h3>
+
+    <!-- JavaScript: Demo Auto Fill -->
+    <script>
+        function fillDemo() {
+            const sampleValues = [
+                119.992,157.302,74.997,0.00784,0.00007,0.00370,0.00554,
+                0.01109,0.04374,0.42600,0.02182,0.03130,0.02971,0.06425,
+                0.02211,21.03300,0.41478,0.81529,-4.813031,0.26648,2.301442,0.284654
+            ];
+            for (let i = 1; i <= 22; i++) {
+                document.getElementById(`f${i}`).value = sampleValues[i - 1];
+            }
+        }
+    </script>
+
+</body>
+</html>
