@@ -50,10 +50,10 @@ parkinson-detection/
 -venv\Scripts\activate      # For Windows
 
 ---
--Install dependencies:
--pip install -r requirements.txt
--Run the Flask app:
--python app.py
+- Install dependencies:
+- pip install -r requirements.txt
+- Run the Flask app:
+- python app.py
 
 
 ---
