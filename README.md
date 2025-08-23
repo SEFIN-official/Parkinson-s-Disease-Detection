@@ -40,20 +40,20 @@ parkinson-detection/
 ## ⚙️ Installation & Setup
 
 1. Clone the repository:
-  git clone https://github.com/your-username/parkinson-detection.git
-  cd parkinson-detection
+ - git clone https://github.com/your-username/parkinson-detection.git
+  -cd parkinson-detection
 
 ---
-Create a virtual environment (optional but recommended):
-python -m venv venv
-source venv/bin/activate   # For Linux/Mac
-venv\Scripts\activate      # For Windows
+-Create a virtual environment (optional but recommended):
+-python -m venv venv
+-source venv/bin/activate   # For Linux/Mac
+-venv\Scripts\activate      # For Windows
 
 ---
-Install dependencies:
-pip install -r requirements.txt
-Run the Flask app:
-python app.py
+-Install dependencies:
+-pip install -r requirements.txt
+-Run the Flask app:
+-python app.py
 
 
 ---
