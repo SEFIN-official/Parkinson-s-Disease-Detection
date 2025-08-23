@@ -54,6 +54,14 @@ parkinson-detection/
 - pip install -r requirements.txt
 - Run the Flask app:
 - python app.py
+---
+## Dataset
+
+This project uses the **Parkinson’s Disease Dataset** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/parkinsons.data).
+
+- **Dataset Name:** Parkinson’s Disease Dataset  
+- **Source:** UCI Machine Learning Repository  
+- **Link:** [Download Here](https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/parkinsons.data)  
 
 
 ---
