@@ -25,12 +25,12 @@ The model then predicts whether the patient is likely to have Parkinson’s dise
 
 ## 📂 Project Structure
 parkinson-detection/
-│── static/ # CSS/JS files (if any)
-│── templates/
-│ └── index.html # Frontend UI
-│── model.pkl # Trained ML model
-│── app.py # Flask backend
-│── requirements.txt # Dependencies
+- │── static/ # CSS/JS files (if any)
+- │── templates/
+- │    └── index.html # Frontend UI
+- │── model.pkl # Trained ML model
+- │── app.py # Flask backend
+- │── requirements.txt # Dependencies
 
 
 
@@ -41,13 +41,13 @@ parkinson-detection/
 
 1. Clone the repository:
  - git clone https://github.com/your-username/parkinson-detection.git
-  -cd parkinson-detection
+ - cd parkinson-detection
 
 ---
--Create a virtual environment (optional but recommended):
--python -m venv venv
--source venv/bin/activate   # For Linux/Mac
--venv\Scripts\activate      # For Windows
+- Create a virtual environment (optional but recommended):
+- python -m venv venv
+- source venv/bin/activate   # For Linux/Mac
+- venv\Scripts\activate      # For Windows
 
 ---
 - Install dependencies:
@@ -58,7 +58,7 @@ parkinson-detection/
 
 ---
 Open in browser:
-http://127.0.0.1:5000/
+- http://127.0.0.1:5000/
 
 ---
 📊 Machine Learning Model
