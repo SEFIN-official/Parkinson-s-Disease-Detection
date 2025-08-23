@@ -48,6 +48,14 @@ parkinson-detection/
 - python -m venv venv
 - source venv/bin/activate   # For Linux/Mac
 - venv\Scripts\activate      # For Windows
+---
+## requirements.txt
+Flask==3.0.3
+scikit-learn==1.5.0
+numpy==1.26.4
+pandas==2.2.2
+joblib==1.4.2
+
 
 ---
 - Install dependencies:
