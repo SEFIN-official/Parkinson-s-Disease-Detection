@@ -55,9 +55,13 @@ Install dependencies:
 pip install -r requirements.txt
 Run the Flask app:
 python app.py
-Open in browser:
 
+
+---
+Open in browser:
 http://127.0.0.1:5000/
+
+---
 📊 Machine Learning Model
 The model is trained using Parkinson’s dataset (UCI ML Repository).
 
@@ -67,6 +71,8 @@ Binary classification using Random Forest / SVM / Logistic Regression.
 
 Model saved as model.pkl with joblib.
 
+
+---
 🧑‍💻 What You Learn
 UI Development with Flask & HTML
 
