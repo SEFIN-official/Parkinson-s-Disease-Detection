@@ -98,6 +98,8 @@ Binary Classification ML pipeline
 Model Deployment with Flask
 ---
 OUTPUT SCREENSHOT:
+
+
 <img width="311" height="855" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/52f01522-9c23-4c9d-b33f-872f547272fa" />
 
 
